@@ -37,7 +37,7 @@
     "docs:dev": "pnpm --dir ./docs run dev",
     "docs:install": "pnpm --dir ./docs install",
     "docs:deploy": "pnpm --dir ./docs run deploy",
-    "prepare": "pnpm husky && pnpm ts-patch install -s",
+    "prepare": "yarn husky && yarn ts-patch install -s",
     "prepublishOnly": "pnpm build",
     "prettier:check": "pnpm prettier:init --check",
     "prettier:fix": "pnpm prettier:init --write",
