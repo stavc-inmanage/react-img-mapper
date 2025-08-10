@@ -29,21 +29,21 @@
   "main": "dist/ImageMapper.js",
   "types": "dist/ImageMapper.d.ts",
   "scripts": {
-    "build": "pnpm tsc",
-    "lint": "pnpm eslint --ignore-pattern=.gitignore,.eslintignore .",
-    "lint:fix": "pnpm lint --fix",
-    "playground:dev": "pnpm --dir ./playground run dev",
-    "playground:install": "pnpm --dir ./playground install",
-    "docs:dev": "pnpm --dir ./docs run dev",
-    "docs:install": "pnpm --dir ./docs install",
-    "docs:deploy": "pnpm --dir ./docs run deploy",
+    "build": "yarn tsc",
+    "lint": "yarn eslint --ignore-pattern=.gitignore,.eslintignore .",
+    "lint:fix": "yarn lint --fix",
+    "playground:dev": "yarn --dir ./playground run dev",
+    "playground:install": "yarn --dir ./playground install",
+    "docs:dev": "yarn --dir ./docs run dev",
+    "docs:install": "yarn --dir ./docs install",
+    "docs:deploy": "yarn --dir ./docs run deploy",
     "prepare": "yarn husky && yarn ts-patch install -s",
-    "prepublishOnly": "pnpm build",
-    "prettier:check": "pnpm prettier:init --check",
-    "prettier:fix": "pnpm prettier:init --write",
-    "prettier:init": "pnpm prettier \"**/*.{js,jsx,ts,tsx,css,scss,json,md}\"",
+    "prepublishOnly": "yarn build",
+    "prettier:check": "yarn prettier:init --check",
+    "prettier:fix": "yarn prettier:init --write",
+    "prettier:init": "yarn prettier \"**/*.{js,jsx,ts,tsx,css,scss,json,md}\"",
     "script:lint": "bash -e ./scripts/lint.sh",
-    "ts": "pnpm tsc --noEmit -p tsconfig.json"
+    "ts": "yarn tsc --noEmit -p tsconfig.json"
   },
   "dependencies": {
     "react-fast-compare": "^3.2.2"
@@ -78,7 +78,6 @@
     "react": "16.x || 17.x || 18.x || 19.x",
     "react-dom": "16.x || 17.x || 18.x || 19.x"
   },
-  "packageManager": "pnpm@9.15.4",
   "engines": {
     "node": ">=16",
     "npm": ">=8",
